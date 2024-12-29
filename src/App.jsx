@@ -1,17 +1,16 @@
-import React from 'react';
-import Home from "./components/home";
-import Login from "./components/Login";
-import Signup from"./components/Signup";
-import {Route, Routes} from "react-router-dom";
+
+import {Outlet} from "react-router-dom";
 
 function App() {
   return( 
     <div>
-     <Routes>
+     {/* <Routes>
       <Route path="/home" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
-     </Routes>
+     </Routes> */}
+     hi
+     <Outlet/> 
     </div>
   );  
   
